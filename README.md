@@ -1,2 +1,1 @@
-# fullstack-katas
-Daily coding exercises, algorithm implementations (DSA), and isolated syntax experiments across Python, JavaScript, and SQL. 🧪
+This repository serves as a technical sandbox for daily syntax experiments, algorithm practice (DSA), and architectural prototyping. For production-grade applications, please refer to my Pinned Repositories.
