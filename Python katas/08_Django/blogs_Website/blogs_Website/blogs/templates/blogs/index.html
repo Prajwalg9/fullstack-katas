@@ -1,0 +1,37 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Blogs Home{% endblock %}
+
+
+{% block content %}
+
+<h1 style="color: #ffffffff;">Dashboard</h1>
+    <p style="color: #ffffffff;">Welcome to your dashboard, {{ request.user.username }}.</p>
+  <br><br>
+
+<div class="blog-grid">
+
+{% for blog in blogs %}
+    <div class="blog-card">
+        <a href="{% url 'post_detail' blog.title %}">
+            <h2>{{ blog.title }}</h2>
+        <img src="{% static 'images/' %}{{ blog.image }}" alt="{{ blog.title }}" width="200">
+
+        <p>
+                {% for tag in blog.tags.all %}
+                    <span style="background-color: #f0f0f0;color:#000; padding: 2px 8px; border-radius: 4px; margin-right: 5px;">
+                        #{{ tag.caption }}
+                    </span>
+                {% empty %}
+                    <span>No tags.</span>
+                {% endfor %}
+            </p>
+        </a>
+    </div>
+{% empty %}
+    <p>No blogs available.</p>
+{% endfor %}
+</div>
+
+{% endblock %}

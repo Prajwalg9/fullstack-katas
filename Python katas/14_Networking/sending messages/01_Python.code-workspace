@@ -1,0 +1,62 @@
+{
+	"folders": [
+		{
+			"path": "../../01_Python"
+		},
+		{
+			"path": "../../02_File Handling"
+		},
+		{
+			"path": "../../03_RegEx"
+		},
+		{
+			"path": "../../04_python_oops"
+		},
+		{
+			"path": "../../05_Tkinter"
+		},
+		{
+			"path": "../../06_postgre_sql"
+		},
+		{
+			"path": "../../07_Data Analysis"
+		},
+		{
+			"path": "../../08_Django"
+		},
+		{
+			"path": "../../09_Flask"
+		},
+		{
+			"path": "../../10_Rest_framework"
+		},
+		{
+			"path": "../../11 Web Scrapping"
+		},
+		{
+			"path": "../../12_OpenCV"
+		},
+		{
+			"path": "../../13_selinium"
+		},
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../15-Bootstarp"
+		},
+		{
+			"path": "../../Practice_problems"
+		},
+		{
+			"path": "../../PROJECTS"
+		},
+		{
+			"path": "../../PROJECTS/CryptoVault"
+		},
+		{
+			"path": "../../PROJECTS/Fin_Trace_Desktop"
+		}
+	],
+	"settings": {}
+}

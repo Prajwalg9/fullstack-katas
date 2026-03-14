@@ -1,0 +1,20 @@
+1) 192.168.0.1        # valid
+2) 10.0.0.5           # valid
+3) 172.16.254.1       # valid
+4) 8.8.8.8            # valid
+5) 1.2.3.4            # valid
+6) 255.255.255.255    # valid
+7) 0.0.0.0            # valid (syntactically; often “special” in networking)
+8) 123.45.67.89       # valid
+9) 99.0.250.200       # valid
+10) 203.0.113.10      # valid
+11) 256.168.0.1       # invalid (256 > 255)
+12) 192.168.0.300     # invalid (300 > 255)
+13) 192.168.1         # invalid (only 3 octets)
+14) 10.0.0.1.5        # invalid (5 octets)
+15) 192.168.01.1      # invalid (leading zero in “01” if you disallow them)
+16) 192.168@1.1       # invalid (non‑digit character @)
+17) 123.456.78.90     # invalid (456 > 255)
+18) 10.10.10          # invalid (only 3 octets)
+19) 10.10.10.         # invalid (trailing dot, empty last octet)
+20) 300.10.10.10      # invalid (300 > 255)

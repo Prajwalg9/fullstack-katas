@@ -1,0 +1,67 @@
+{# blogs/post.html #}
+{% extends 'base.html' %}
+{% block title %}Blogs Home{% endblock %}
+{% load static %}
+{% block content %}
+
+<h3>
+  <a href="{% url 'home' %}" class="black" style="color: #ffffffff;"><-Go Home</a>
+</h3>
+
+<div class="blog-card" style="padding: 20px; margin-bottom: 30px;text-align: left;">
+    <h3>{{ blog.title }}</h3>
+    <img src="{% static 'images/' %}{{ blog.image }}" alt="{{ blog.title }}" width="200">
+    <p>
+        <strong>Category:</strong> {{ blog.category }} <br>
+        <strong>Author:</strong>
+        <a href="mailto:{{ blog.author.email }}" alt="{{ blog.author.phone }}">
+            {{ blog.author.first_name }} {{ blog.author.last_name }}
+        </a><br>
+        <strong>Date:</strong> {{ blog.date|date:"M d, Y" }}
+    </p>
+
+    <p>{{ blog.description|truncatechars:150 }}</p>
+
+    <p>
+        {% for tag in blog.tags.all %}
+            <span class="tag">
+                #{{ tag.caption }}
+            </span>
+        {% empty %}
+            <span>No tags.</span>
+        {% endfor %}
+    </p>
+</div>
+
+<section class="comments">
+    <h3>Comments:</h3>
+    {% for comment in comments %}
+        <div class="comment-card">
+            <p>
+                <strong>Comment By: </strong>
+                <a href="mailto:{{ comment.user_email }}" style="color: #60a5fa;">
+                    {{ comment.user_name }}
+                </a>,
+                <strong>At:</strong> ({{ comment.date|date:"M d, Y" }})
+            </p>
+            <p><strong>Comment:</strong> {{ comment.text }}</p>
+        </div>
+    {% empty %}
+        <p>No comments yet. Be the first to comment!</p>
+    {% endfor %}
+</section>
+
+<section class="comment-form">
+    <h3>Add a comment</h3>
+    <form method="post">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="{{ formdata.text.id_for_label }}">Your comment</label>
+            {{ formdata.text }}
+            {{ formdata.text.errors }}
+        </div>
+        <button type="submit" class="btn-primary">Add Comment</button>
+    </form>
+</section>
+
+{% endblock %}
