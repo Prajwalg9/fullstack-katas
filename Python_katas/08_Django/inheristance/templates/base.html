@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}My Market{% endblock %}</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; }
+        nav { background: #333; padding: 10px; }
+        nav a { color: white; margin-right: 15px; text-decoration: none; }
+        footer { margin-top: 50px; color: #777; border-top: 1px solid #ddd; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="/">Home 🏠</a>
+        <a href="/contact/">Contact 📞</a>
+    </nav>
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer>
+        <p>&copy; 2026 My Awesome Market</p>
+    </footer>
+
+</body>
+</html>
