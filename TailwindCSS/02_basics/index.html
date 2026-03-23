@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>basics</title>
+  </head>
+  <body>
+    <h1 class="text-blue-700 font-bold">Text Decoration</h1>
+
+    <p>
+      I’m Derek, an astro-engineer based in Tattooine. I like to build X-Wings
+      at <a class="underline decoration-sky-500">My Company, Inc</a>. Outside of
+      work, I like to
+      <a class="underline decoration-pink-500">watch pod-racing</a> and have
+      <a class="underline decoration-indigo-500">light-saber</a> fights.
+    </p>
+
+    <br />
+    <h1 class="text-blue-700 font-bold">Text Decoration with opacity</h1>
+
+    <p>
+      I’m Derek, an astro-engineer based in Tattooine. I like to build X-Wings
+      at <a class="underline decoration-sky-500/30">My Company, Inc</a>. Outside
+      of work, I like to
+      <a class="underline decoration-pink-500/30">watch pod-racing</a> and have
+      <a class="underline decoration-indigo-500/30">light-saber</a> fights.
+    </p>
+
+    <br />
+    <h1 class="text-blue-700 font-bold">Using a custom value</h1>
+
+    <p class="underline decoration-[#50d71e]">underline decoration-[#50d71e]</p>
+
+    <br />
+    <h1 class="text-blue-700 font-bold">Using hover with decor</h1>
+    <p>
+      The
+      <a href="#" class="underline hover:decoration-pink-500"
+        >quick brown fox</a
+      >
+      jumps over the lazy dog.
+    </p>
+
+    <br />
+
+    <h1 class="text-blue-700 font-bold">diffrernt styles</h1>
+
+    <p class="underline decoration-solid">underline decoration-solid</p>
+    <p class="underline decoration-double">underline decoration-double</p>
+    <p class="underline decoration-dotted">underline decoration-dotted</p>
+    <p class="underline decoration-dashed">underline decoration-dashed</p>
+    <p class="underline decoration-wavy">underline decoration-wavy</p>
+
+    <p class="underline decoration-1">underline decoration-1</p>
+    <p class="underline decoration-2">underline decoration-2</p>
+    <p class="underline decoration-4">underline decoration-3</p>
+
+    <p class="underline underline-offset-1">The quick brown fox...</p>
+    <p class="underline underline-offset-2">The quick brown fox...</p>
+    <p class="underline underline-offset-4">The quick brown fox...</p>
+    <p class="underline underline-offset-8">The quick brown fox...</p>
+
+    <p class="underline-offset-[3px] ...">Lorem ipsum dolor sit amet...</p>
+
+    <br />
+
+    <h1 class="text-blue-700 font-bold">Text transformation</h1>
+    <p class="uppercase">The quick brown fox ...</p>
+    <p class="lowercase">The quick brown fox ...</p>
+    <p class="capitalize">The quick brown fox ...</p>
+    <p class="normal-case">The quick brown fox ...</p>
+
+    <br />
+    <h1 class="text-blue-700 font-bold">text wrapping</h1>
+
+    <article class="text-wrap">
+      <h3>Beloved Manhattan soup stand closes</h3>
+      <p>New Yorkers are facing the winter chill...</p>
+    </article>
+    <article class="text-nowrap">
+      <h3>Beloved Manhattan soup stand closes</h3>
+      <p>New Yorkers are facing the winter chill...</p>
+    </article>
+    <h1 class="text-pretty md:text-balance ...">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, quaerat!
+      Nam deleniti accusantium veniam, quia laboriosam autem cupiditate itaque
+      neque voluptatem necessitatibus molestiae veritatis in consectetur
+      exercitationem harum obcaecati fuga!
+    </h1>
+
+
+     <br />
+    <h1 class="text-blue-700 font-bold">Indentation</h1>
+
+    <p class="indent-8">So I started to walk into the water. I won't lie to you boys, I was terrified. But I pressed on, and as I made my way past the breakers a strange calm came over me. I don't know if it was divine intervention or the kinship of all living things but I tell you Jerry at that moment, I was a marine biologist.</p>
+<p class="indent-[50%] ...">
+  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, minima ab nobis hic quos eaque quibusdam dicta vel nihil eligendi assumenda, quis excepturi numquam, doloribus mollitia facere aspernatur ipsam porro!
+</p>
+
+
+  <br />
+    <h1 class="text-blue-700 font-bold">Text alignment</h1>
+    <span class="inline-block text-align-top">top</span> 
+    <span class="inline-block text-align-bottom">bottom</span> 
+    <span class="inline-block text-align-middle">middle</span>
+
+
+
+     <br />
+    <h1 class="text-blue-700 font-bold">Wraping</h1>
+
+<div class="bg-blue-800">
+  <div class="flex border-1 border-white rounded max-w-sm">
+  <div class="bg-pink-700 w-10 h-10 rounded-3xl "></div>
+  <div class="wrap-break-word">
+    <p class="font-medium">Jay Riemenschneider</p>
+    <p>jason.riemenschneider@vandelayindustries.com</p>
+  </div>
+</div><br>
+<div class="flex border-1 rounded border-white max-w-sm">
+  <div class="bg-pink-700 w-10 h-10 rounded-3xl "></div>
+  <div class="wrap-anywhere">
+    <p class="font-medium">Jay Riemenschneider</p>
+    <p>jason.riemenschneider@vandelayindustries.com</p>
+  </div>
+</div>
+</div><br>
+
+
+<p>Higher resolution means more than just a better-quality image. With a
+Retina 6K display, <a class="text-blue-600 after:content-['_↗']" href="...">
+Pro Display XDR</a> gives you nearly 40 percent more screen real estate than
+a 5K display.</p>
+
+
+<br />
+    <h1 class="text-blue-700 font-bold">text clip-bg-linear-to-r from-pink-500 to-violet-500 bg-clip-text text-5xl font-extrabold text-transparent</h1>
+
+<p class="bg-linear-to-r from-pink-500 to-violet-500 bg-clip-text text-5xl font-extrabold text-transparent ...">
+  Hello world
+</p>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
