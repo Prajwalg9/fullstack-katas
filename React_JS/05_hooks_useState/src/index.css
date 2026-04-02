@@ -1,0 +1,45 @@
+h1{
+    color: bisque;
+    background: #2c2c2cd8;
+    padding: 20px;
+    font-size:40px;
+    display: block;
+    width: fit-content;
+    border-radius: 5px;
+}
+body{
+    background: rgb(27, 35, 39);
+    text-align: center;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+button{
+    background: #42b400;
+    color: #ffffff;
+    display: block;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+    border: none;
+}
+.flex{
+    display: flex;
+    
+}
+ul{
+    text-align:left ;
+}
+li{
+    color: #ffffff;
+}
+details{
+    background-color: #0e2700;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+label{
+    color: aliceblue;
+}
