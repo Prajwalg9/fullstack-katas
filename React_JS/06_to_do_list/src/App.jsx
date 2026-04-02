@@ -52,7 +52,7 @@ function App() {
           <br />
 
           <textarea
-            className="border-2 text-white border-white p-2 outline-0 rounded-xs w-full w-full"
+            className="border-2 text-white border-white p-2 outline-0 rounded-xs w-full"
             name="description"
             required
             type="textarea"
