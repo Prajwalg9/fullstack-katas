@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Currency Converter</h1><br>
+        <form>
+            <div class="amount">
+                <label for="amount">Amount:</label>
+                <input type="number" value="1" id="amount" placeholder="Enter amount">
+            </div>
+            <div class="dropdown">
+                <div class="from">
+                    <label for="from">From:</label><br>
+                    <div class="input">
+                        <img src="" alt="">
+                        <select id="from">
+                            <!-- options by javascript -->
+                        </select>
+                    </div>
+                </div>
+                <img src="exchange.png" alt="Exchange Icon" class="exchange-icon">
+                <div class="to">
+                    <label for="to">To:</label><br>
+                    <div class="input">
+                        <img src="" alt="">
+                        <select id="to">
+                            <!-- options by javascript -->
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="message">
+                1 USD = 92.38 INR
+            </div>
+            <button type="button" id="convert-btn">Get Convert Rate</button>
+        </form>
+    </div>
+
+    <script src="codes.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

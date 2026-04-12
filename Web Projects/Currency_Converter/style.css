@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #0097c9;
+}
+.container{
+    background: #ffffff;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    height: fit-content;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 500px;
+}
+.amount{
+    border: #ccc 1px solid;
+    border-radius: 5px;
+    padding: 10px;
+}
+.amount label{
+    font-size: 18px;
+    font-weight: 500;
+    color: #000000;
+}
+.amount input{
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+}
+
+.dropdown{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+.dropdown img{
+    width: 30px;
+    display: inline;
+}
+.dropdown .input{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.dropdown .select{
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    width: 100%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+.message{
+    font-size: 18px;
+    color: #e1e0e0;
+    padding: 15px;
+    border-radius: 5px;
+    background: rgb(12, 135, 176);
+}
+#convert-btn{
+    padding: 10px 20px;
+    border: none;
+    background: #23bfca;
+    color: #000000;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#to, #from{
+    border: none;
+}
+.input{
+    gap: 10px;
+}

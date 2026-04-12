@@ -1,0 +1,184 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #adeafca8;
+
+    font-family: 'Poppins', sans-serif;
+}
+#whether{
+    width: 2.5rem;
+}
+.whetherContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 3rem;
+}
+.inputs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 5rem;
+    padding: 15px 30px;
+    border-radius: 30px;
+    background: #32adf9a3;
+    flex-direction: column;
+    gap: 20px;
+}
+#getWhetherBtn{
+    padding: 10px 20px;
+    border: none;
+    background: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+.inputContainer{
+    display: flex;
+    gap: 10rem;
+    background: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+#cityInput{
+    font-size: 20px;
+    outline: none;
+    border: none;
+}
+.inp{
+    display: flex;
+    gap: 10px;
+}
+.whetherResult{
+    display: flex;
+    align-items: center;
+    gap: 7rem;
+    justify-content: space-between;
+}
+.whetherDetails{
+    display: flex;
+    flex-direction: column;
+}
+.firstrow,.secondrow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+.currentWhether,.whetherDetails{
+    background-color: #32adf9a3;
+    display: flex;
+    border-radius: 25px;
+    width: 20rem;
+    height: 20rem;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.currentWhether h2,.whetherDetails h2{
+    font-size: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+}
+.currentWhether p{
+    font-size: 1.2rem;
+}
+.currentWhether img{
+    width: 7rem;
+}
+.whetherDetails{
+    width: 40rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    flex-direction: column;
+}
+.gridbox img{
+    width: 45px;
+    height: auto;
+}
+.inputs, .currentWhether, .whetherDetails{
+    box-shadow: 5px 5px 20px rgba(61, 61, 61, 0.598);
+}
+.gridbox{
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px;
+    gap: 20px;
+}
+.gridbox img{
+    background: #32adf9a3;
+    border-radius: 50%;
+    padding: 15px;
+    width: 60px;
+}
+.bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url('images/bg.jpg') no-repeat center center;
+    background-size: cover;
+    filter: blur(8px);
+    z-index: -1;
+}
+
+body {
+    background: transparent;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+.whetherContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    transition: all 0.5s ease;
+}
+
+.whetherResult {
+    display: none;
+    opacity: 0;
+}
+
+.whetherContainer.active {
+    justify-content: flex-start;
+    padding-top: 2rem;
+}
+
+.whetherContainer.active .whetherResult {
+    display: flex;
+    animation: popIn 0.6s ease-out forwards;
+}
+
+@keyframes popIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px) scale(0.95);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}

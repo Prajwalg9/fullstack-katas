@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whether Now</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="bg"></div>
+    <div class="header">
+        <h1><img src="images/whether.png" id="whether" alt="whether icon">WhetherNow</h1>
+        <h2 id="timenow"></h2>
+    </div>
+    <div class="whetherContainer">
+        <div class="inputs">
+            <h1>Whats your whether now? <span>Ask Whether Now.</span></h1>
+            <div class="inputContainer">
+                <div class="inp">
+                    <h2>City Name: </h2>
+                    <input type="text" placeholder="Enter your city name" id="cityInput">
+                </div>
+                <button id="getWhetherBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </div>
+
+        <br><br>
+        <div class="whetherResult" id="whetherResult">
+            <div class="currentWhether">
+                <h2>Current whether</h2>
+                <img id="whetherimg" src="https://cdn.weatherapi.com/weather/64x64/day/116.png" alt="whether image">
+                <h1 id="temp">15°C</h1>
+                <p id="condition">condition</p>
+                <p id="location">city</p>
+                <p id="region">region</p>
+                <p id="country">country</p>
+            </div>
+            <div class="whetherDetails">
+                <h2>Whether Details</h2>
+                <br>
+                <div class="firstrow">
+                    <div class="gridbox">
+                        <img src="images/humidity.png" alt="humidity icon">
+                        <div class="box">
+                            <div class="text"><b>Humidity</b></div>
+                            <div class="text" id="humidity">1</div>
+                        </div>
+                    </div>
+                    <div class="gridbox">
+                        <img src="images/windspeed.png" alt="windspeed icon">
+                        <div class="box">
+                            <div class="text"><b>Wind Speed</b></div>
+                            <div class="text" id="windspeed">1</div>
+                        </div>
+                    </div>
+                    <div class="gridbox">
+                        <img src="images/feelslike.png" alt="feelslike icon">
+                        <div class="box">
+                            <div class="text"><b>Feels Like</b></div>
+                            <div class="text" id="feelslike">1</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="secondrow">
+                    <div class="gridbox">
+                        <img src="images/heatindex.png" alt="heatindex icon">
+                        <div class="box">
+                            <div class="text"><b>Heat Index</b></div>
+                            <div class="text" id="heatindex">1</div>
+                        </div>
+                    </div>
+                    <div class="gridbox">
+                        <img src="images/dewpoint.png" alt="dewpoint icon">
+                        <div class="box">
+                            <div class="text"><b>Dew Point</b></div>
+                            <div class="text" id="dewpoint">1</div>
+                        </div>
+                    </div>
+                    <div class="gridbox">
+                        <img src="images/pressure.png" alt="pressure icon">
+                        <div class="box">
+                            <div class="text"><b>Pressure</b></div>
+                            <div class="text" id="pressure">1</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
